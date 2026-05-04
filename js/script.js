@@ -108,4 +108,4 @@ console.log(texts);
 const p1 = document.querySelector('p');// выбираю первый параграф в элементе
 p1.outerHTML = ""; // удаляем тег - первый параграф
 console.log(paragraphs);
-console.log(texts);
+console.log(texts); 
