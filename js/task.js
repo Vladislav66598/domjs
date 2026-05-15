@@ -23,11 +23,28 @@ link.textContent = 'ссылка на сайт';
 link.href = 'https://midis.ru';
 link.target = '_blank';
 
-link.addEventListener('mauseover', function(){
+link.style.display = 'inline-block';
+link.style.marginTop = '20px';
+link.style.fontSize = '20px';
+link.style.color = 'blue';
+link.style.textDecoration = 'none';
+link.style.transition = '0.3s';
+
+link.addEventListener('mouseover', function(){
     link.style.color = 'red';
+    link.style.transform = 'scale(1.2)';
 });
-link.addEventListener('mauseout', function(){
+link.addEventListener('mouseout', function(){
     link.style.color = 'blue';
+    link.style.transform = 'scale(1)';
 });
 
 document.body.append(link);
+
+//4
+const ball = document.getElementById('ball');
+const start = document.getElementById('start');
+
+start.addEventListener('click', function(){
+    ball.style.top = '-100px';
+})
