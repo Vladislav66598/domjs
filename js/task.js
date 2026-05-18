@@ -44,7 +44,8 @@ document.body.append(link);
 //4
 const ball = document.getElementById('ball');
 const start = document.getElementById('start');
+start.textContent = 'старт';
 
 start.addEventListener('click', function(){
-    ball.style.top = '-100px';
-})
+    ball.style.transform = 'translateY(-200px)';
+});
